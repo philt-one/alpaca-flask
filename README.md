@@ -18,12 +18,14 @@ Usage:
 4. Run the `main.py` file using the command `python main.py`. The API will start running at http://127.0.0.1:5000/.
 5. To call the API, send a POST request with JSON data containing an 'input' key with your desired input text to the /generate endpoint.
 
+Example JSON request data:
 ```json
 {
     "input": "What is the capital of France?"
 }
 ```
 
+Example cURL command:
 ```bash
 curl -X POST \
   http://127.0.0.1:5000/generate \
