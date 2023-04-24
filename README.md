@@ -12,9 +12,9 @@ A Flask-based API for generating text using the Llama C++ library. This API prov
 
 Usage:
 
-1. Install Flask if you haven't already: `pip install flask`
-2. Clone this repository and navigate to the project directory.
-3. Set the environment variable `LLAMA_MODEL_PATH` to the path of your Llama model, if desired. Otherwise, you can download the [ggml-alpaca-7b-q4.bin](https://huggingface.co/Sosaka/Alpaca-native-4bit-ggml/blob/main/ggml-alpaca-7b-q4.bin)
+1. Clone this repository and navigate to the project directory.
+2. Install requirements: `pip install -r requirements.txt`
+3. Set the environment variable `LLAMA_MODEL_PATH` to the path of your Llama model, if desired. Otherwise, you can download the [ggml-alpaca-7b-q4.bin](https://huggingface.co/Sosaka/Alpaca-native-4bit-ggml/blob/main/ggml-alpaca-7b-q4.bin) and it will be used by default.
 4. Run the `main.py` file using the command `python main.py`. The API will start running at http://127.0.0.1:5000/.
 5. To call the API, send a POST request with JSON data containing an 'input' key with your desired input text to the /generate endpoint.
 
