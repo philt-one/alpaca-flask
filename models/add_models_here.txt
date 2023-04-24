@@ -1,0 +1,1 @@
+Download `.bin` model files and add them in this directory
